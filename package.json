@@ -17,7 +17,8 @@
     "lint": "NODE_ENV=test eslint src/",
     "compile": "rimraf lib/*; NODE_ENV=production babel src/ -d lib/ -s",
     "compile:watch": "npm run compile -- -w",
-    "prepublish": "npm run compile"
+    "prepublish": "npm run compile",
+    "precommit": "npm run compile"
   },
   "dependencies": {},
   "devDependencies": {
